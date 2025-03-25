@@ -5,9 +5,11 @@ using namespace std;
 int main(){
     int a,b,c,n;
 
+    //输入三个大于0小于或等于100的整数
     cout<<"输入三个大于0小于或等于100的整数：";
     cin>>a>>b>>c;
 
+    //检测abc
     while(!(a>=1 && a<=100)){
         cout<<"输入的a错误，请重新输入：";
         cin>>a;
@@ -23,6 +25,7 @@ int main(){
         cin>>c;
     }
 
+    //检查构成三角形的类型
     if((a+b>c) && (a+c>b) && (b+c>a)){
         if(a==b && b==c){
             n=1;}
