@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "*.go": "bat",
+        "iostream": "cpp"
+    }
+}
