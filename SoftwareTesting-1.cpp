@@ -3,18 +3,17 @@
 using namespace std;
 
 int main(){
-    char continueTest;
-    //添加一个循环让程序可以连续测试多个用例
-    do {
+
         int a,b,c,n;
 
         //输入三个大于0小于或等于100的整数
         cout<<"输入三个大于0小于或等于100的整数：";
         cin>>a>>b>>c;
         
+        //检测输入是否为整数
         if(cin.fail()){
             cout<<"请输入1~100的三个整数"<<endl;
-            return 0;  // 直接结束程序
+            return 0;
         }
 
         //检测abc
@@ -54,11 +53,5 @@ int main(){
         }
             else{
                 cout<<"不能构成三角形"<<endl;
-            }
-            
-            cout<<"\n是否继续测试？(y/n): ";
-            cin>>continueTest;
-        } while(continueTest == 'y');
-        
-        return 0;
+            }    
     }
